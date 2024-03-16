@@ -3,8 +3,8 @@ import SignIn from "./page/login";
 function App() {
   return (
     <div className="App">
+      <SignIn />
       <Home />
-      {/* <SignIn /> */}
     </div>
   );
 }
