@@ -8,6 +8,7 @@ import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import DataGridBasic from "../components/DataGrid";
+import ReactPlayer from "react-player/youtube";
 
 export default function Home() {
   const sample = [
@@ -36,7 +37,14 @@ export default function Home() {
               <Button variant="contained">search</Button>
             </Box>
           </Box>
-
+          <Box display="flex" justifyContent="center">
+            <ReactPlayer
+              url="https://www.youtube.com/watch?v=Stept9f4-R4"
+              width="640px" // Default width
+              height="360px" // Default height
+              playing={true}
+            />
+          </Box>
           <Card>
             <CardHeader title="Basic" sx={{ mb: 2 }} />
             <Box sx={{ height: 390 }}>
